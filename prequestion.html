@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Notes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f6fa;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center the content horizontally */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px; /* Reduced margin to bring info div closer */
+            color: #2c3e50;
+            font-size: 2.5rem; /* Larger heading */
+        }
+
+        .page-info {
+            text-align: center;
+            margin-bottom: 30px; /* Space below the info div */
+            max-width: 800px; /* Limit the width for better readability */
+            color: #555; /* Slightly muted text color */
+            font-size: 1.1rem; /* Slightly larger font size */
+            line-height: 1.6; /* Improved line spacing */
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-bottom: 20px;
+            margin-right: 80%;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+            font-size: 1rem; /* Larger button text */
+        }
+
+        .back-button:hover {
+            background: #2980b9;
+        }
+
+        .section {
+            margin-bottom: 50px; /* More space between sections */
+            width: 100%;
+            max-width: 1200px; /* Wider container for larger boxes */
+        }
+
+        .section h2 {
+            color: #3498db;
+            margin-bottom: 30px; /* More space below section headings */
+            text-align: center;
+            font-size: 2rem; /* Larger section heading */
+        }
+
+        .box-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Larger boxes */
+            gap: 20px; /* Space between boxes */
+            justify-content: center; /* Center the grid horizontally */
+        }
+
+        .box {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 100%; /* Full width of the grid cell */
+            height: 420px; /* Slightly taller boxes */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            background-color: rgb(207, 204, 204);
+        }
+
+        .box h3 {
+            color: #2c3e50;
+            font-size: 1.25rem; /* Larger text */
+            margin-top: 15px; /* More space above the text */
+        }
+
+        .box img {
+            width: 300px; /* Larger image size */
+            height: 300px; /* Larger image size */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            border-radius: 10px;
+        }
+
+        .download-button {
+            display: inline-block;
+            margin-top: 15px; /* More space above the button */
+            padding: 10px 20px; /* Larger button */
+            background: #3498db;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem; /* Larger button text */
+            transition: background 0.3s ease;
+        }
+
+        .download-button:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <a href="resource.html" class="back-button"><i class="fas fa-arrow-left"></i> Back to Resources</a>
+    <h1>Question Papers</h1>
+    <!-- New div for page information -->
+    <div class="page-info">
+        Welcome to the Question Paper page! Here, you can find and download previous year question papers. 
+        The papers are organized by year and subject for easy access. Simply click on the subject you're interested in and download 
+        the papers to help you in your exams. Happy learning!
+    </div>
+    <div class="section">
+        <h2>1st Year</h2>
+        <div class="box-container">
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwEiHKDh7rKKHyB-QfsE9gxfiiilsb8AllFQ&s">
+                <h3>Electrical</h3>
+                <a href="https://drive.google.com/drive/folders/1UZuJo801fDKTmy3fy-QzIZ3XZx1G70Qn" class="download-button">Download</a>
+            </div>
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRB_huukHUak_chDSvtps9d2KGlF-NdmAHpg&s" alt="Physics">
+                <h3>Physics</h3>
+                <a href="https://drive.google.com/drive/folders/1UZuJo801fDKTmy3fy-QzIZ3XZx1G70Qn" class="download-button">Download</a>
+            </div>
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4_ETMnLdH_8djatg2ZhbHr0YmSFtnSqhkZw&s">
+                <h3>Environment</h3>
+                <a href="https://drive.google.com/drive/folders/1UZuJo801fDKTmy3fy-QzIZ3XZx1G70Qn" class="download-button">Download</a>
+            </div>
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLb1AFxGgtvyEvf1kLFeAhqvqv2JBNjvTEzQ&s">
+                <h3>Electronics</h3>
+                <a href="https://drive.google.com/drive/folders/1UZuJo801fDKTmy3fy-QzIZ3XZx1G70Qn" class="download-button">Download</a>
+            </div>
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt-zJ_z7AU95EjMQiQfVBLfjh9ZEqAPgqciA&s" alt="Mechanics">
+                <h3>Mechanics</h3>
+                <a href="https://drive.google.com/drive/folders/1UZuJo801fDKTmy3fy-QzIZ3XZx1G70Qn" class="download-button">Download</a>
+            </div>
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIqefIEW96a3QdAnp0rvA5ISynw_CoNeURIA&s">
+                <h3>Soft Skill</h3>
+                <a href="https://drive.google.com/drive/folders/1UZuJo801fDKTmy3fy-QzIZ3XZx1G70Qn" class="download-button">Download</a>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h2>2nd Year</h2>
+        <div class="box-container">
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXatjS4yGAdEiXrV-2MJSrohqm9st3_nJFeg&s">
+                <h3>COA</h3>
+                <a href="https://drive.google.com/drive/folders/1UZuJo801fDKTmy3fy-QzIZ3XZx1G70Qn" class="download-button">Download</a>
+            </div>
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF3vxVNZVs3bonhPUQvb_htnzi6hF0HkBmQA&s">
+                <h3>Python</h3>
+                <a href="https://drive.google.com/drive/folders/1UZuJo801fDKTmy3fy-QzIZ3XZx1G70Qn" class="download-button">Download</a>
+            </div>
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWJzBSvgDa4f7LayKwB00l61Or1wQR300xOw&s">
+                <h3>Java</h3>
+                <a href="https://drive.google.com/drive/folders/1UZuJo801fDKTmy3fy-QzIZ3XZx1G70Qnhttps://drive.google.com/drive/folders/1UZuJo801fDKTmy3fy-QzIZ3XZx1G70Qn" class="download-button">Download</a>
+            </div>
+            <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOm5OUWo5MjAjraKW-mEnq-L_bdu24x0DxsUzwiBpy3ygpt0Ik1Fh7qHwfBLpHju8n2vo&usqp=CAU" alt="Cyber Security">
+                <h3>Cyber Security</h3>
+                <a href="https://drive.google.com/drive/folders/1UZuJo801fDKTmy3fy-QzIZ3XZx1G70Qn" class="download-button">Download</a>
+            </div>
+            <div class="box">
+                <img src="https://vectorified.com/image/math-logo-vector-21.jpg" alt="Maths">
+                <h3>Maths</h3>
+                <a href="https://drive.google.com/drive/folders/1UZuJo801fDKTmy3fy-QzIZ3XZx1G70Qn" class="download-button">Download</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
